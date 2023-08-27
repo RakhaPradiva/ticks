@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+	<title>Ticks | Register</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="logo-container">
+			<a href="#" class="header-link">
+				<img class="header-logo" src="../assets/icons/logo.png" alt="Ticks Logo" />
+			</a>
+			<h1 class="header-title">Ticks</h1>
+		</div>
+		<nav class="navbar">
+			<input type="checkbox" id="toggle-menu" class="menu-checkbox" />
+			<label for="toggle-menu" class="toggle-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</label>
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./tickets.html">Tickets</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./promotions.html">Promotions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link register-btn" href="./register.html">Register</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="form-section">
+			<div class="form-container">
+				<div class="form-header">
+					<img class="form-logo" src="../assets/icons/logo.png" alt="Ticks Logo" />
+					<h2 class="form-title">Register</h2>
+				</div>
+				<form id="form" class="form" method="get" action="../index.html">
+					<div class="form-group">
+						<label class="form-label" for="email">Email</label>
+						<input class="text-field" type="email" name="email" id="email" placeholder="example@mail.com" />
+						<small class="error-message" id="email-error"></small>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="password">Password</label>
+						<input class="text-field" type="password" name="password" id="password" placeholder="password" />
+						<small class="error-message" id="password-error"></small>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="phone">Phone Number</label>
+						<input class="text-field" type="tel" name="phone" id="phone" placeholder="08123456789" />
+						<small class="error-message" id="phone-error"></small>
+					</div>
+					<div class="form-group">
+						<label class="form-label">Gender</label>
+						<div class="gender-group">
+							<label class="gender-label" for="male">
+								<input class="gender-radio" type="radio" id="male" name="gender" value="male" />
+								Male
+							</label>
+							<label class="gender-label" for="female">
+								<input class="gender-radio" type="radio" id="female" name="gender" value="female" />
+								Female
+							</label>
+						</div>
+						<small class="error-message" id="gender-error"></small>
+					</div>
+					<div class="form-group">
+						<label class="agree-label" for="agree">
+							<input class="agree-check" type="checkbox" name="agree" id="agree" />
+							I agree to the terms and conditions
+						</label>
+						<small class="error-message" id="agree-error"></small>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">
+							Register
+						</button>
+					</div>
+					<div id="modal" class="modal">
+						<div class="modal-content">
+							<img class="modal-icon" src="../assets/icons/check.svg" alt="Success" />
+							<p class="modal-text">Registration Success</p>
+							<button type="button" id="modal-btn" class="btn btn-primary modal-btn">OK</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="footer-text">Copyright &copy; 2023 Ticks. All Rights Reserved.</p>
+		<ul class="social-list">
+			<li class="social-item">
+				<a href="http://facebook.com" target="_blank" rel="noopener">
+					<img class="social-icon" src="../assets/icons/facebook.png" alt="Facebook">
+				</a>
+			</li>
+			<li class="social-item">
+				<a href="http://twitter.com" target="_blank" rel="noopener">
+					<img class="social-icon" src="../assets/icons/twitter.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="social-item">
+				<a href="http://instagram.com" target="_blank" rel="noopener">
+					<img class="social-icon" src="../assets/icons/instagram.png" alt="Instagram">
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<script src="../js/register.js"></script>
+</body>
+
+</html>

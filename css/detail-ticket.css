@@ -1,0 +1,92 @@
+.detail-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-inner {
+  width: 60%;
+  min-height: 400px;
+  background-color: #16161a;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fffffe;
+  margin: 20px auto;
+}
+
+.detail-ticket-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.detail-wrapper-img {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.detail-list {
+  list-style-type: none;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.detail-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width : 800px) {
+  .detail-inner {
+    width: 80%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-list {
+    width: 100%;
+  }
+
+  .detail-wrapper-img {
+    height: 300px;
+  }
+
+  .detail-text {
+    font-size: 1rem;
+  }
+
+  .detail-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .detail-item:last-child {
+    margin: 0 auto;
+  }
+}

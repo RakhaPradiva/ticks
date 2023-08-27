@@ -1,0 +1,37 @@
+.promo-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  list-style: none;
+  min-width: 350px;
+  min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 3px 2.5px 6px #0f0f12,
+    -3px -3px 6px #1d1d22;
+  transition: all 0.3s ease-in-out;
+}
+
+.promo-item:hover {
+  transform: translateY(-15px);
+}
+
+.promo-title {
+  color: #fffffe;
+  font-size: 1.5rem;
+}
+
+.promo-validity {
+  font-size: 1rem;
+  color: #fffffe;
+}

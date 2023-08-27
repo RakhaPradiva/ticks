@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Ticks | Home</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <a href="#" class="header-link">
+        <img class="header-logo" src="./assets/icons/logo.png" alt="Ticks Logo" />
+      </a>
+      <h1 class="header-title">Ticks</h1>
+    </div>
+    <nav class="navbar">
+      <input type="checkbox" id="toggle-menu" class="menu-checkbox">
+      <label for="toggle-menu" class="toggle-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/tickets.html">Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/promotions.html">Promotions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link register-btn" href="./pages/register.html">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carousel">
+      <div class="carousel-container">
+        <div class="main-carousel" id="main-carousel">
+          <div class="carousel-content">
+            <img src="./assets/images/banner/banner-1.png" class="carousel-img" alt="Banner 1">
+            <img src="./assets/images/banner/banner-2.png" class="carousel-img" alt="Banner 2">
+            <img src="./assets/images/banner/banner-3.png" class="carousel-img" alt="Banner 3">
+            <img src="./assets/images/banner/banner-4.png" class="carousel-img" alt="Banner 4">
+            <img src="./assets/images/banner/banner-5.png" class="carousel-img" alt="Banner 5">
+          </div>
+          <button type="button" id="prev" class="control-btn prev">
+            &#10094;
+          </button>
+          <button type="button" id="next" class="control-btn next">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-seller">
+      <h2 class="section-title">Best Seller</h2>
+      <ul class="concert-list">
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/alan-walker.png" class="concert-poster" alt="Alan Walker">
+          </div>
+          <h3 class="concert-name">Alan Walker - EDM Tour 2023</h3>
+          <p class="concert-date">June 23, 2023</p>
+          <p class="ticket-price">IDR 1.500.000,00</p>
+          <a href="./pages/detail-ticket/alan-walker.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/rex-orange-country.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">Rex Orange Country - Future Sounds Festival</h3>
+          <p class="concert-date">May 20, 2024</p>
+          <p class="ticket-price">IDR 2.000.000,00</p>
+          <a href="./pages/detail-ticket/rex-orange.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/the-goo-goo-dolls.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">The Goo Goo Dolls - Vintage Vibes Concert</h3>
+          <p class="concert-date">August 25, 2023</p>
+          <p class="ticket-price">IDR 2.500.000,00</p>
+          <a href="./pages/detail-ticket/the-goo-goo-dolls.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="recommendation">
+      <h2 class="section-title">Recommendation</h2>
+      <ul class="concert-list">
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/firehouse.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">Firehouse - El Darado Children's Hospital</h3>
+          <p class="concert-date">May 25 2024</p>
+          <p class="ticket-price">IDR 1.000.000,00</p>
+          <a href="./pages/detail-ticket/firehouse.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/ricky-montgomery.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">RICKY MONTGOMERY - Live Streaming Concert</h3>
+          <p class="concert-date">June 21, 2023</p>
+          <p class="ticket-price">IDR 850.000,00</p>
+          <a href="./pages/detail-ticket/ricky-montgomery.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/alan-walker.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">Alan Walker - EDM Tour 2023</h3>
+          <p class="concert-date">June 23, 2023</p>
+          <p class="ticket-price">IDR 1.500.000,00</p>
+          <a href="./pages/detail-ticket/alan-walker.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+        <li class="concert-item">
+          <div class="poster-wrapper">
+            <img src="./assets/images/concert-poster/bon-jovi.png" class="concert-poster" alt="">
+          </div>
+          <h3 class="concert-name">Bon Jovi - Rockin' the Stadium</h3>
+          <p class="concert-date">November 22, 2023</p>
+          <p class="ticket-price">IDR 1.350.000</p>
+          <a href="./pages/detail-ticket/bon-jovi.html" class="btn btn-link btn-primary">View Details</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">Copyright &copy; 2023 Ticks. All Rights Reserved.</p>
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="http://facebook.com" target="_blank" rel="noopener">
+          <img class="social-icon" src="./assets/icons/facebook.png" alt="Facebook">
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="http://twitter.com" target="_blank" rel="noopener">
+          <img class="social-icon" src="./assets/icons/twitter.png" alt="Twitter">
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="http://instagram.com" target="_blank" rel="noopener">
+          <img class="social-icon" src="./assets/icons/instagram.png" alt="Instagram">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #242629;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.header {
+	background-color: #16161a;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 24px;
+	height: 70px;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.header-link {
+	text-decoration: none;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.header-logo {
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover .header-logo {
+	opacity: 0.5;
+}
+
+.header-title {
+	color: #fffffe;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 12px;
+	letter-spacing: 6px;
+}
+
+.navbar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.nav-menu {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-item {
+	list-style: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 16px;
+	color: #fffffe;
+	font-weight: 500;
+}
+
+.nav-link:hover {
+	color: #7f5af0;
+}
+
+.register-btn {
+	font-weight: bold;
+	padding: 8px 16px;
+	border: 1px solid #7f5af0;
+	border-radius: 5px;
+}
+
+.register-btn:hover {
+	color: #fffffe;
+	background-color: #7f5af0;
+}
+
+.menu-checkbox {
+	display: none;
+}
+
+.toggle-menu {
+	display: none;
+	width: 28px;
+	height: auto;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.bar {
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #fffffe;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	margin: 4px auto;
+}
+
+.btn {
+	display: block;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 16px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-link {
+	text-decoration: none;
+	display: block;
+}
+
+.btn-primary {
+	background-color: #7f5af0;
+}
+
+.btn-primary,
+.btn-secondary {
+	font-weight: 600;
+	color: #fffffe;
+	font-size: 1rem;
+
+}
+
+.btn-secondary {
+	border: 3px solid #7f5af0;
+}
+
+.btn-primary:hover {
+	background-color: #5936d3;
+}
+
+.btn-secondary:hover {
+	background-color: #7f5af0;
+}
+
+.carousel-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.main-carousel {
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-content {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-img {
+	width: 100vw;
+	height: 100%;
+	object-fit: cover;
+}
+
+.control-btn {
+	position: absolute;
+	top: 50%;
+	font-size: 1.25rem;
+	text-align: center;
+	color: #fffffe;
+	background-color: #443e3e80;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+
+.control-btn:hover {
+	background-color: #443e3e;
+}
+
+.control-btn.prev {
+	left: 20px;
+}
+
+.control-btn.next {
+	right: 20px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fffffe;
+	margin: 30px 0;
+}
+
+.concert-list {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin: 40px auto;
+}
+
+.concert-item {
+	color: #fffffe;
+	list-style: none;
+	border-radius: 10px;
+	max-width: 300px;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #16161a;
+	padding: 20px;
+	gap: 20px;
+	box-shadow: 5px 5px 10px #0f0f12,
+		-5px -5px 10px #1d1d22;
+	transition: all 0.3s ease-in-out;
+}
+
+.concert-item:hover {
+	transform: scale(1.05);
+}
+
+.poster-wrapper {
+	width: 250px;
+	height: 200px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.concert-poster {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.concert-name {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.concert-date {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.concert-time {
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000080;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	width: 50%;
+	height: auto;
+	background-color: #16161a;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.modal-icon {
+	width: 150px;
+	height: 100%;
+}
+
+.modal-text {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #fffffe;
+	margin: 20px auto;
+}
+
+.modal-btn {
+	display: inline-block;
+}
+
+.footer {
+	width: 100%;
+	padding: 20px;
+	background-color: #16161a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-text {
+	font-size: 0.75rem;
+	color: #fffffe;
+}
+
+.social-list {
+	display: flex;
+	gap: 20px;
+}
+
+.social-item {
+	list-style: none;
+}
+
+.social-icon {
+	width: 30px;
+	height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+	.toggle-menu {
+		display: block;
+	}
+
+	.nav-menu {
+		display: none;
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		background-color: #16161a;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		z-index: 10;
+		padding: 20px 0;
+	}
+
+	.menu-checkbox:checked~.nav-menu {
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 10px auto;
+	}
+
+	.nav-link {
+		font-size: 1rem;
+	}
+
+	.menu-checkbox:checked~.toggle-menu .bar:nth-child(2) {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	.menu-checkbox:checked~.toggle-menu .bar:nth-child(1) {
+		transform: translateY(8px) rotate(135deg);
+	}
+
+	.menu-checkbox:checked~.toggle-menu .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-135deg);
+	}
+
+	.control-btn {
+		width: 35px;
+		height: 35px;
+		font-size: 0.75rem;
+	}
+
+	.footer {
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+
+}

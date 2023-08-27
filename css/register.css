@@ -1,0 +1,122 @@
+.form-section {
+  width: 100%;
+  margin: 32px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 50%;
+  height: auto;
+  background-color: #16161a;
+  border-radius: 10px;
+  padding: 0 20px 20px 20px;
+}
+
+.form-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.form-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.form-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fffffe;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-label {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.form-label,
+.gender-label,
+.agree-label {
+  color: #fffffe;
+}
+
+.text-field {
+  width: 100%;
+  color: #fffffe;
+  background-color: #242629;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.gender-group {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.gender-label {
+  display: flex;
+  align-items: center;
+}
+
+.gender-radio,
+.agree-check {
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-clip: content-box;
+  border: 1px solid #7f5af0;
+  background-color: #242629;
+}
+
+.gender-radio {
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.agree-label {
+  margin-bottom: 10px;
+}
+
+.agree-check {
+  border-radius: 5px;
+}
+
+.gender-radio:checked,
+.agree-check:checked {
+  background-color: #7f5af0;
+}
+
+.error-message {
+  color: #ff1f1f;
+  margin: 5px 0;
+}
+
+@media screen and (max-width : 800px) {
+  .form-container {
+    width: 80%;
+  }
+
+  .gender-group {
+    width: 50%;
+  }
+}
